@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
-//const generateMarkdown = require('generateMarkdown');
-//import generateMarkdown from 'generateMarkdown.js';
+// const generateMarkdown = require('generateMarkdown');
+import generateMarkdown from './generateMarkdown.js';
 //const fs = require('fs');
 import fs from 'fs';
 //const inquirer = require('inquirer');
@@ -58,14 +58,29 @@ inquirer.prompt([
     name: "contribute",
     message: "what does the user need to know about contributing to the repo?"
 },
-]);
+])
+.then(answers => console.log(answers));
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(err) {
+        console.log(fileName)
+        console.log(data)
+        if (err) {
+            return console.log(err)
+        }else {
+            console.log("success")
+        }
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {
-    questions(); 
+    questions()
+    .then(function(data) {
+        writeToFile("README.md", generateMarkdown(data));
+        console.log(data)
+    })
 }
 
 // Function call to initialize app
