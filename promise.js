@@ -44,7 +44,7 @@ import axios from 'axios';
 //   })
 
 
- async function one(){
+async function one(){
 
     setInterval( async function(){ await console.log("Hello")},3000);
 }
@@ -53,12 +53,11 @@ function two(){
     console.log('two')
 
 
-  
 
 }
 
- await one();
- two();
+await one();
+two();
 
 
 

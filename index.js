@@ -15,27 +15,57 @@ const questions = [
     {
     type: "input",
     name: "author",
-    message: "what is your name?"
+    message: "what is your name? (required)",
+    validate(answer) {
+        if(!answer) {
+            return "Please, fill in your name!"
+        }
+        return true
+    }
 },
 {
     type: "input",
     name: "username",
-    message: "what is your Github Username?"
+    message: "what is your Github Username? (required)",
+    validate(answer) {
+        if(!answer) {
+            return "Please, fill in your Github username!"
+        }
+        return true
+    }
 },
 {
     type: "input",
     name: "email",
-    message: "what is your email address?"
+    message: "what is your email address? (required)",
+    validate(answer) {
+        if(!answer) {
+            return "Please, fill in valid email address!"
+        }
+        return true
+    }
 },
 {
     type: "input",
     name: "title",
-    message: "what is the title for your project?"
+    message: "what is the title for your project? (required)",
+    validate(answer) {
+        if(!answer) {
+            return "Please, fill in a valid project name!"
+        }
+        return true
+    }
 },
 {
     type: "input",
     name: "description",
-    message: "write a brief description of your project here: ?"
+    message: "write a brief description of your project here: (required)",
+    validate(answer) {
+        if(!answer) {
+            return "Please, fill in valid description!"
+        }
+        return true
+    }
 },
 {
     type: "list",

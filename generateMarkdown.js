@@ -24,7 +24,7 @@ return `# ${data.title}
 ## Description
 ${data.description}
 ### Installation:
-In order to install the necessart dependencies, open the console and run the following:
+In order to install the necessary dependencies, open the console and run the following:
 \`\`\`${data.installations}\`\`\`
 ### Usage:
 ${data.usage}
