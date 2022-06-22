@@ -9,9 +9,9 @@ import inquirer from 'inquirer';
 //const packageJSON = require('../package.json'); 
 //import packageJSON from '../package.json'
 
+
 // TODO: Create an array of questions for user input
-const questions = () =>
-inquirer.prompt([
+const questions = [
     {
     type: "input",
     name: "author",
@@ -58,30 +58,32 @@ inquirer.prompt([
     name: "contribute",
     message: "what does the user need to know about contributing to the repo?"
 },
-])
-.then(answers => console.log(answers));
+]
+//.then(data => console.log(data));
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err) {
-        console.log(fileName)
-        console.log(data)
-        if (err) {
-            return console.log(err)
-        }else {
-            console.log("success")
-        }
-    })
-}
+// function writeToFile(fileName, data) {
+//     fs.writeToFile(fileName, data, function(err) {
+//         console.log(fileName)
+//         console.log(data)
+//         if(err) {
+//             return console.log(err)
+//         }else {
+//             console.log("success")
+//         }
+//     })
+// }
 
-// TODO: Create a function to initialize app
 function init() {
-    questions()
-    .then(function(data) {
-        writeToFile("README.md", generateMarkdown(data));
-        console.log(data)
+    inquirer.prompt(questions)
+    .then(data => {
+        console.log(data);
+        const saveData = generateMarkdown(data);
+        fs.writeFile("README.md", saveData, (err) => {
+            if(err) throw err;
+            console.log("success yo!!!")
+        }) 
+        
     })
 }
 
-// Function call to initialize app
-init();
+init(); 
