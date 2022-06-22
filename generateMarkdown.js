@@ -14,7 +14,6 @@ function renderLicenseSection(license) {}
 export default function generateMarkdown(data) {
 return `# ${data.title} 
 
-${data.description}
 ## Table of Contents:
 * [installation](#installation)
 * [Usage](#usage)
@@ -22,6 +21,8 @@ ${data.description}
 * [contributing](#contribute)
 * [Tests](#tests)
 * [Questions](#questions)
+## Description
+${data.description}
 ### Installation:
 In order to install the necessart dependencies, open the console and run the following:
 \`\`\`${data.installations}\`\`\`
@@ -36,7 +37,10 @@ ${data.contribute}
 in order to test open the console and run the following:
 \`\`\`${data.installations}\`\`\`
 ### Questions:
-If you have any questions contanct me on [Github](https://github.com/${data.username})
+If you have any questions contanct me on [Github](https://github.com/${data.username}) or 
+### Email: 
+${data.email}
+
 `;
 }
 
