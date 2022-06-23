@@ -14,7 +14,7 @@ function renderLicenseLink(license) {
     } else if (license === "BSD 3") {
         return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
     } else if (license === "None") {
-        return ``
+        return `""`
     }
 }
 // TODO: Create a function that returns the license section of README

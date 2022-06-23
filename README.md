@@ -7,22 +7,22 @@
 * [Tests](#tests)
 * [Questions](#questions)
 ## Description
-this is a read me generator
+this is a read me generator that creates the read me from scratch
 ### Installation:
 In order to install the necessary dependencies, open the console and run the following:
-```na```
+```npm init```
 ### Usage:
-na
+nothin
 ### License:
 This project is lisenced under:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+""
 ### Contributing:
-na
+go for it just fork
 ### Tests:
 in order to test open the console and run the following:
-```na```
+```npm init```
 ### Questions:
 If you have any questions contanct me on [Github](https://github.com/soulreaper077) or 
 ### Email: 
-jesseponce233@gmail.com
+jesseponce233@gnail.com
 
