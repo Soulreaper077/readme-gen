@@ -7,22 +7,22 @@
 * [Tests](#tests)
 * [Questions](#questions)
 ## Description
-this is a read me generator that creates the read me from scratch
-### Installation:
+this is a read me generator
+## Installation:
 In order to install the necessary dependencies, open the console and run the following:
-```npm init```
-### Usage:
-nothin
-### License:
+``````
+## Usage:
+
+## License:
 This project is lisenced under:
-""
+
 ### Contributing:
-go for it just fork
-### Tests:
+
+## Tests:
 in order to test open the console and run the following:
-```npm init```
-### Questions:
+``````
+## Questions:
 If you have any questions contanct me on [Github](https://github.com/soulreaper077) or 
-### Email: 
-jesseponce233@gnail.com
+## Email: 
+jesseponce233@gmail.com
 

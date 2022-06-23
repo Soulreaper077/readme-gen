@@ -14,7 +14,7 @@ function renderLicenseLink(license) {
     } else if (license === "BSD 3") {
         return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
     } else if (license === "None") {
-        return `""`
+        return ``
     }
 }
 // TODO: Create a function that returns the license section of README
@@ -34,22 +34,22 @@ return `# ${data.title}
 * [Questions](#questions)
 ## Description
 ${data.description}
-### Installation:
+## Installation:
 In order to install the necessary dependencies, open the console and run the following:
 \`\`\`${data.installations}\`\`\`
-### Usage:
+## Usage:
 ${data.usage}
-### License:
+## License:
 This project is lisenced under:
 ${badge}
 ### Contributing:
 ${data.contribute}
-### Tests:
+## Tests:
 in order to test open the console and run the following:
 \`\`\`${data.installations}\`\`\`
-### Questions:
+## Questions:
 If you have any questions contanct me on [Github](https://github.com/${data.username}) or 
-### Email: 
+## Email: 
 ${data.email}
 
 `;
