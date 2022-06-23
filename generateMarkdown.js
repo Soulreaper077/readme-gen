@@ -36,7 +36,7 @@ return `# ${data.title}
 ${data.description}
 ## Installation:
 In order to install the necessary dependencies, open the console and run the following:
-\`\`\`${data.installations}\`\`\`
+${data.installations}
 ## Usage:
 ${data.usage}
 ## License:
