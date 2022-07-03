@@ -89,19 +89,7 @@ const questions = [
     message: "what does the user need to know about contributing to the repo?"
 },
 ]
-//.then(data => console.log(data));
 
-// function writeToFile(fileName, data) {
-//     fs.writeToFile(fileName, data, function(err) {
-//         console.log(fileName)
-//         console.log(data)
-//         if(err) {
-//             return console.log(err)
-//         }else {
-//             console.log("success")
-//         }
-//     })
-// }
 
 function init() {
     inquirer.prompt(questions)
